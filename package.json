@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@headlessui/react": "^2.2.7",
+    "@vercel/analytics": "^1.5.0",
     "@yusifaliyevpro/countries": "^2.2.2",
     "axios": "^1.11.0",
     "framer-motion": "^12.23.12",
