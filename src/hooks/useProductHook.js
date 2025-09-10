@@ -14,9 +14,6 @@ const useProductHook = () => {
   } else {
     availableProducts.forEach((product) => {
       const priceInfo = product.countrySupport[country?.toLowerCase()];
-      console.log(
-        `${product.goodsName} - Amount: ${priceInfo.amount}, BP: ${priceInfo.bp}`
-      );
     });
   }
   return { loading, error, country, availableProducts, currency, countryName };

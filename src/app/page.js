@@ -37,7 +37,7 @@ export default function Home() {
 
   const filterCountry = availableProducts.filter((item) => item.countrySupport);
 
-  console.log(filterCountry, "LDLDLDLDLLDDLDLDLKDJFHFGFT");
+  // console.log(filterCountry, "LDLDLDLDLLDDLDLDLKDJFHFGFT");
 
   if (error) {
     return <p> error...{error}</p>;
@@ -260,8 +260,21 @@ export default function Home() {
                 Medicine, with seven factories across China, has two
                 Headquarters, situated in Hong Kong and Shjiazhuang, Hebei.
               </p>
+
               <div className="flex space-x-4">
                 {/* Social Media Icons */}
+                <motion.div
+                  className="  flex items-center justify-center cursor-pointer"
+                  // whileHover={{ scale: 1.1, backgroundColor: "#059669" }}
+                >
+                  <Link href="tel:+2348133861915">
+                    Contact Us:{" "}
+                    <span className=" font-bold">+234-81338-61915</span>
+                  </Link>
+                </motion.div>
+              </div>
+              {/* <div className="flex space-x-4">
+               
                 <motion.div
                   className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center cursor-pointer"
                   whileHover={{ scale: 1.1, backgroundColor: "#059669" }}
@@ -274,7 +287,7 @@ export default function Home() {
                 >
                   <Globe className="w-5 h-5" />
                 </motion.div>
-              </div>
+              </div> */}
             </div>
 
             {/* Quick Links */}

@@ -344,11 +344,9 @@ const CheckoutPage = () => {
                     Processing...
                   </div>
                 ) : (
-                  `Place Order • ${state.items[0]?.currencySymbol || "$"}${(
-                    state.total +
-                    10 +
-                    state.total * 0.08
-                  ).toFixed(2)}`
+                  `Place Order • ${
+                    state.items[0]?.currencySymbol || "$"
+                  }${state.total.toLocaleString()}`
                 )}
               </Button>
 

@@ -145,14 +145,13 @@ export const useLocation = () => {
         const response = await axios.get(
           `https://api.opencagedata.com/geocode/v1/json?q=${position.coords.latitude}+${position.coords.longitude}&key=${apiKey}`
         );
-        console.log(response.data, "syhuiophgfdsasdfgh");
+        // console.log(response.data, "syhuiophgfdsasdfgh");
 
         const countryName =
           response.data.results[0].components.country.toLowerCase();
         const country =
           response.data.results[0].components.country_code.toLowerCase();
         const my_currency = response.data.results[0];
-        console.log(my_currency, "My Contry");
 
         if (response.data) {
           setcountry(country);
@@ -174,7 +173,7 @@ export const useLocation = () => {
     );
   }, []);
 
-  console.log(countryName, country, currency, "ALLLDKDKDKADKDDK");
+  // console.log(countryName, country, currency, "ALLLDKDKDKADKDDK");
 
   return { countryName, currency, country, loading, error };
 };
