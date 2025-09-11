@@ -129,51 +129,81 @@ export const useLocation = () => {
     currencyCode: null,
     currencySymbol: null,
   });
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (!navigator.geolocation) {
-      setError("Geolocation is not supported by your browser.");
-      setLoading(false);
-      return;
-    }
+    // console.log(response.data, "syhuiophgfdsasdfgh");
 
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        const apiKey = "9d0a8b9687ef4edfa8292eb694fd4b31";
-        const response = await axios.get(
-          `https://api.opencagedata.com/geocode/v1/json?q=${position.coords.latitude}+${position.coords.longitude}&key=${apiKey}`
-        );
-        // console.log(response.data, "syhuiophgfdsasdfgh");
+    const countryName = "Nigeria";
 
-        const countryName =
-          response.data.results[0].components.country.toLowerCase();
-        const country =
-          response.data.results[0].components.country_code.toLowerCase();
-        const my_currency = response.data.results[0];
+    const country = "ng";
+    // const my_currency = response.data.results[0];
 
-        if (response.data) {
-          setcountry(country);
-          setcountryName(countryName);
-          setcurrency({
-            currencyCode: my_currency.annotations.currency.iso_code,
-            currencyName: my_currency.annotations.currency.name,
-            currencySymbol: my_currency.annotations.currency.symbol,
-          });
-        }
-
-        setLoading(false);
-      },
-
-      (err) => {
-        setError(err.message);
-        setLoading(false);
-      }
-    );
+    setcountry(country);
+    setcountryName(countryName);
+    setcurrency({
+      currencyCode: "NGN",
+      currencyName: "naira",
+      currencySymbol: "N",
+    });
   }, []);
-
-  // console.log(countryName, country, currency, "ALLLDKDKDKADKDDK");
-
   return { countryName, currency, country, loading, error };
 };
+
+// export const useLocation = () => {
+//   const [countryName, setcountryName] = useState(null);
+//   const [country, setcountry] = useState(null);
+//   const [currency, setcurrency] = useState({
+//     currencyName: null,
+//     currencyCode: null,
+//     currencySymbol: null,
+//   });
+//   const [loading, setLoading] = useState(true);
+//   const [error, setError] = useState(null);
+
+//   useEffect(() => {
+//     if (!navigator.geolocation) {
+//       setError("Geolocation is not supported by your browser.");
+//       setLoading(false);
+//       return;
+//     }
+
+//     navigator.geolocation.getCurrentPosition(
+//       async (position) => {
+//         const apiKey = "9d0a8b9687ef4edfa8292eb694fd4b31";
+//         const response = await axios.get(
+//           `https://api.opencagedata.com/geocode/v1/json?q=${position.coords.latitude}+${position.coords.longitude}&key=${apiKey}`
+//         );
+//         // console.log(response.data, "syhuiophgfdsasdfgh");
+
+//         const countryName =
+//           response.data.results[0].components.country.toLowerCase();
+//         const country =
+//           response.data.results[0].components.country_code.toLowerCase();
+//         const my_currency = response.data.results[0];
+
+//         if (response.data) {
+//           setcountry(country);
+//           setcountryName(countryName);
+//           setcurrency({
+//             currencyCode: my_currency.annotations.currency.iso_code,
+//             currencyName: my_currency.annotations.currency.name,
+//             currencySymbol: my_currency.annotations.currency.symbol,
+//           });
+//         }
+
+//         setLoading(false);
+//       },
+
+//       (err) => {
+//         setError(err.message);
+//         setLoading(false);
+//       }
+//     );
+//   }, []);
+
+//   // console.log(countryName, country, currency, "ALLLDKDKDKADKDDK");
+
+//   return { countryName, currency, country, loading, error };
+// };
