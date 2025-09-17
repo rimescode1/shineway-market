@@ -30,15 +30,15 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-red-50;
+  @apply bg-green-50;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-red-300 rounded-full;
+  @apply bg-green-300 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-red-400;
+  @apply bg-green-400;
 }
 
 /* Loading animation */

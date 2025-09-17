@@ -1,5 +1,5 @@
 "use client";
-import { Layout } from "../components/Layout";
+
 import { ProductCard } from "../components/ProductCard";
 import { HeroSection } from "../components/HeroSection";
 import { motion } from "framer-motion";
@@ -264,13 +264,23 @@ export default function Home() {
               <div className="flex space-x-4">
                 {/* Social Media Icons */}
                 <motion.div
-                  className="  flex items-center justify-center cursor-pointer"
+                  className="  flex flex-col items-start  gap-2 justify-center "
                   // whileHover={{ scale: 1.1, backgroundColor: "#059669" }}
                 >
+                  <p className=" bg-amber-600 p-2 rounded-md ">Contact Us</p>
                   <Link href="tel:+2348133861915">
-                    Contact Us:{" "}
-                    <span className=" font-bold">+234-81338-61915</span>
+                    Phone: <span className=" font-bold">+234-81338-61915</span>
                   </Link>
+                  <p>
+                    email:
+                    <span className=" ml-1 font-bold">shinyafrica@163.com</span>
+                  </p>
+                  <p>
+                    Head Office:
+                    <span className=" ml-1 font-bold">
+                      13A/13b Owodunni, Block 1, Flat 3, Ikeja, Lagos
+                    </span>
+                  </p>
                 </motion.div>
               </div>
               {/* <div className="flex space-x-4">

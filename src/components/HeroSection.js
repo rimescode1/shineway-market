@@ -4,7 +4,7 @@ import { Leaf, ArrowRight } from "lucide-react";
 
 export const HeroSection = () => {
   return (
-    <section className="relative py-20 px-4 overflow-hidden">
+    <section className="relative py-20 px-4 overflow-x-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0">
         {[...Array(8)].map((_, i) => (

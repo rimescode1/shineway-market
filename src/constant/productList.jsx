@@ -29,21 +29,21 @@ export const mockProducts = [
     organic: false,
     description: "Promotes eye health and clarity.",
   },
-  {
-    id: "3",
-    name: "Energy Glasses",
+  // {
+  //   id: "3",
+  //   name: "Energy Glasses",
 
-    image:
-      "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Fa69c6bb0b2be97582158f322140410baaf43a401-1645x1215.png%26w%3D750%26q%3D75&w=1080&q=50",
-    rating: 4.8,
-    countrySupport: {
-      ng: { price: 35500, bp: 22, currency: "NGN" },
-      tz: { price: 108000, bp: 23, currency: "TZS" },
-      ke: { price: 6540, bp: 23, currency: "KES" },
-    },
-    organic: false,
-    description: "Anti-blue light glasses to protect your vision.",
-  },
+  //   image:
+  //     "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Fa69c6bb0b2be97582158f322140410baaf43a401-1645x1215.png%26w%3D750%26q%3D75&w=1080&q=50",
+  //   rating: 4.8,
+  //   countrySupport: {
+  //     ng: { price: 35500, bp: 22, currency: "NGN" },
+  //     tz: { price: 108000, bp: 23, currency: "TZS" },
+  //     ke: { price: 6540, bp: 23, currency: "KES" },
+  //   },
+  //   organic: false,
+  //   description: "Anti-blue light glasses to protect your vision.",
+  // },
   {
     id: "4",
     name: "Feminine Gel",
@@ -117,7 +117,7 @@ export const mockProducts = [
   },
   {
     id: "9",
-    name: "Ulcer-Care",
+    name: "Gastro Calm",
 
     image: "https://cdn.example.com/products/ulcer-care.png",
     rating: 4.5,
@@ -129,24 +129,24 @@ export const mockProducts = [
     organic: false,
     description: "Supports stomach comfort and ulcer relief.",
   },
-  {
-    id: "10",
-    name: "Golden Drop",
+  // {
+  //   id: "10",
+  //   name: "Golden Drop",
 
-    image:
-      "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252F8d564de9d8bbd5ad792fdea28a4d83765936051f-4581x3382.png%26w%3D750%26q%3D75&w=1080&q=50",
-    rating: 4.5,
-    countrySupport: {
-      ng: { price: 4700, bp: 2, currency: "NGN" },
-      tz: { price: 22200, bp: 4, currency: "TZS" },
-      ke: { price: 1310, bp: 4, currency: "KES" },
-    },
-    organic: true,
-    description: "Herbal oral care solution.",
-  },
+  //   image:
+  //     "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252F8d564de9d8bbd5ad792fdea28a4d83765936051f-4581x3382.png%26w%3D750%26q%3D75&w=1080&q=50",
+  //   rating: 4.5,
+  //   countrySupport: {
+  //     ng: { price: 4700, bp: 2, currency: "NGN" },
+  //     tz: { price: 22200, bp: 4, currency: "TZS" },
+  //     ke: { price: 1310, bp: 4, currency: "KES" },
+  //   },
+  //   organic: true,
+  //   description: "Herbal oral care solution.",
+  // },
   {
     id: "11",
-    name: "Anti-Diabetic",
+    name: "Diabalance",
 
     image:
       "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252F45e01968c4031043272ae309f8237f5cf71af8eb-4581x3382.png%26w%3D750%26q%3D75&w=1080&q=50",
@@ -161,7 +161,7 @@ export const mockProducts = [
   },
   {
     id: "12",
-    name: "Prosta-Power",
+    name: "Prosta Capsule",
 
     image:
       "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Fe221a842170d736b10204407df08053a09d3bb62-4581x3382.png%26w%3D750%26q%3D75&w=1080&q=50",
@@ -176,7 +176,7 @@ export const mockProducts = [
   },
   {
     id: "13",
-    name: "Fire-Off Gel",
+    name: "Hermitage Gel",
 
     image: "https://cdn.example.com/products/fire-off.png",
     rating: 4.5,
@@ -233,19 +233,19 @@ export const mockProducts = [
     organic: true,
     description: "Rich in essential fatty acids.",
   },
-  {
-    id: "17",
-    name: "Propolis Soap",
+  // {
+  //   id: "17",
+  //   name: "Propolis Soap",
 
-    image: "https://cdn.example.com/products/propolis-soap.png",
-    rating: 4.4,
-    countrySupport: {
-      tz: { price: 10000, bp: 1.5, currency: "TZS" },
-      ke: { price: 650, bp: 1.5, currency: "KES" },
-    },
-    organic: true,
-    description: "Natural soap infused with propolis.",
-  },
+  //   image: "https://cdn.example.com/products/propolis-soap.png",
+  //   rating: 4.4,
+  //   countrySupport: {
+  //     tz: { price: 10000, bp: 1.5, currency: "TZS" },
+  //     ke: { price: 650, bp: 1.5, currency: "KES" },
+  //   },
+  //   organic: true,
+  //   description: "Natural soap infused with propolis.",
+  // },
   {
     id: "18",
     name: "King's Capsule",
@@ -260,32 +260,32 @@ export const mockProducts = [
     organic: true,
     description: "Enhances strength and vitality.",
   },
-  {
-    id: "19",
-    name: "Peptide Coffee",
+  // {
+  //   id: "19",
+  //   name: "Peptide Coffee",
 
-    image:
-      "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Fd1d77c5abed8eeb0d0cb183e5957c321a3c7168f-4581x3382.png%26w%3D750%26q%3D75&w=1080&q=50",
-    rating: 4.6,
-    countrySupport: {
-      ng: { price: 12500, bp: 5, currency: "NGN" },
-      ke: { price: 2800, bp: 5, currency: "KES" },
-    },
-    organic: true,
-    description: "Coffee blend enriched with peptides.",
-  },
-  {
-    id: "20",
-    name: "Energy Bracelet",
+  //   image:
+  //     "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Fd1d77c5abed8eeb0d0cb183e5957c321a3c7168f-4581x3382.png%26w%3D750%26q%3D75&w=1080&q=50",
+  //   rating: 4.6,
+  //   countrySupport: {
+  //     ng: { price: 12500, bp: 5, currency: "NGN" },
+  //     ke: { price: 2800, bp: 5, currency: "KES" },
+  //   },
+  //   organic: true,
+  //   description: "Coffee blend enriched with peptides.",
+  // },
+  // {
+  //   id: "20",
+  //   name: "Energy Bracelet",
 
-    image:
-      "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Ffde8d9c03a2d07ce828961087b5c86e8eb68bf7e-1645x1215.png%26w%3D750%26q%3D75&w=1080&q=50",
-    rating: 4.3,
-    countrySupport: {
-      ng: { price: 16500, bp: 11, currency: "NGN" },
-      ke: { price: 3000, bp: 10, currency: "KES" },
-    },
-    organic: false,
-    description: "Wearable bracelet for energy balance.",
-  },
+  //   image:
+  //     "https://www.shineway.health/_next/image?url=https%3A%2F%2Fwww.shineway.health%2F_next%2Fimage%3Furl%3Dhttps%253A%252F%252Fcdn.sanity.io%252Fimages%252F4oc445em%252Fproduction%252Ffde8d9c03a2d07ce828961087b5c86e8eb68bf7e-1645x1215.png%26w%3D750%26q%3D75&w=1080&q=50",
+  //   rating: 4.3,
+  //   countrySupport: {
+  //     ng: { price: 16500, bp: 11, currency: "NGN" },
+  //     ke: { price: 3000, bp: 10, currency: "KES" },
+  //   },
+  //   organic: false,
+  //   description: "Wearable bracelet for energy balance.",
+  // },
 ];
